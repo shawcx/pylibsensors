@@ -92,7 +92,7 @@ static PyObject * PyLibSensors_Chip_Features_subscript(PyLibSensors_Chip *self, 
 }
 
 static PyMemberDef PyLibSensors_Chip_members[] = {
-    {"features", Py_T_OBJECT_EX, offsetof(PyLibSensors_Chip, features), Py_READONLY},
+    {"features", T_OBJECT_EX, offsetof(PyLibSensors_Chip, features), READONLY},
     {NULL}
 };
 
